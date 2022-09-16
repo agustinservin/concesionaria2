@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://localhost/PRUEBAMVC/');
+define('URL', 'http://localhost/newWorkspace/concesionaria2/');
 define('HOST', 'localhost');
 define('DB','concesionaria');
 define('USER','root');
