@@ -31,7 +31,16 @@ class App{
                     $controller->render();
                 }
                 else{
+                    $nparam = sizeof($url);
+                    if($nparam > 2){
+                        $param = [];
+                        for($i = 2; $i<$nparam;$i++){
+                            array_push($param, $url[$i]);
+                        }
+                        $controller->{$url[1]}($param);
+                    }else{
                     $controller->{$url[1]}();
+                    }
                 }      
             }
             else{

@@ -18,8 +18,15 @@
     <small class="subtitulo">No se puede encontrar la pagina o ha ocurrido un error</small>
         <a href="<?php echo constant('URL')?>"><button class="botones">Ir a Home</button></a>
         <?php
-    }else if($this->mensaje == '401'){
-        echo "USTED NO TIENE ACCESO";
+    }else if($this->mensaje == 'error 400'){
+        ?>
+           <img height="500" src="<?php echo constant('URL')?>public/images/error-400.png">
+        <h2 class="error-404">
+            ¡Ups! No se pudo completar la solicitud
+    </h2>
+    <small class="subtitulo">Revise de nuevo su solicitud</small>
+        <a href="<?php echo constant('URL')?>"><button class="botones">Ir a Home</button></a>
+        <?php
     }
      ?>
     </div>

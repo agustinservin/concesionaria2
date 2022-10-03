@@ -1,3 +1,3 @@
-<div id="footer">
+<footer>
     &copy; AGUSTIN 2022
-</div>
+</footer>
