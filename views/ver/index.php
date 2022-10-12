@@ -3,6 +3,7 @@
     $foto = constant('URL').$this->auto->foto; 
     $foto2 = constant('URL').$this->auto->foto2;
     $foto3 = constant('URL').$this->auto->foto3;
+    var_dump($this->auto);
     ?>
 <script src="<?php echo constant('URL');?>public/scripts/galeria.js"></script>
 <div class="container-galeria">
