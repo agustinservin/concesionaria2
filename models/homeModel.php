@@ -6,7 +6,6 @@ class homeModel extends Model{
         parent::__construct();    
     }
     public function getCar($nombre,$año,$modelo){
-        
         $objCoche = new Auto();
         $query = $this->db->connect()->prepare("SELECT * FROM autos WHERE nombre = :nombre and anio = :anio and modelo = :modelo");
         $queryFotos = $this->db->connect()->prepare("SELECT * FROM imagenes WHERE patente = :patente");
@@ -53,7 +52,6 @@ class homeModel extends Model{
                 $queryFotos = $this->db->connect()->query("SELECT * FROM imagenes WHERE patente = '".$item->patente."'");
                 while($rowFoto = $queryFotos->fetch()){
                     $item->foto = $rowFoto['foto1'];
-
                     array_push($items, $item);
                 }
             }
@@ -67,13 +65,13 @@ class homeModel extends Model{
     public function buscar($parametro){
         $items2=[];
         try {
-            $query = $this->db->connect()->query("SELECT * FROM autos WHERE nombre LIKE '%".$parametro."%' ");
+            $query = $this->db->connect()->query("SELECT * FROM autos WHERE nombre LIKE '%".$parametro."%' or modelo LIKE '%".$parametro."%' or km LIKE '%".$parametro."%' ");
             while($row = $query->fetch()){
                 $item = new Auto();
                 $item->patente = $row['patente'];
                 $item->nombre  = $row['nombre'];
                 $item->modelo  = $row['modelo'];
-                $item->año  = $row['modelo'];
+                $item->año  = $row['anio'];
                 $item->km  = $row['km'];
                 $item->color   = $row['color'];
                 $queryFotos = $this->db->connect()->query("SELECT * FROM imagenes WHERE patente = '".$item->patente."'");

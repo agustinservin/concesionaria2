@@ -27,24 +27,24 @@ class Home extends Controller{
             }
         }
     }
-    public function buscar($marca = null){
-        if($marca == null){
+    public function buscar($busqueda = null){
+        if($busqueda == null){
             header("Location:".constant('URL'));
         }
         else{
-            $parametro = $marca[0];
+            $parametro = $busqueda[0];
             if($parametro != null){
-            $busqueda = $this->model->buscar($parametro);
-            if(!empty($busqueda)){
-            $this->vista->autos = $busqueda;
+            $resultBusqueda = $this->model->buscar($parametro);
+            if(!empty($resultBusqueda)){
+            $this->vista->autos = $resultBusqueda;
             $this->vista->render('home/index');
             }else{
                 $error = new Errors('404');
                 $this->vista = $error;
                 $this->vista->render('error/index');
+                }
             }
         }
     }
-}
 }
 ?>
