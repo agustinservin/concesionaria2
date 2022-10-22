@@ -1,4 +1,5 @@
 <!-- Slideshow container -->
+<script src="<?php echo constant('URL');?>public/scripts/slider.js"></script>
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
