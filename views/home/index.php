@@ -10,6 +10,7 @@
 <body>
     <?php
     require 'views/header.php'; 
+    require 'views/slider.php';
     ?>
     <?php
      require 'views/buscador.php'; 
@@ -21,7 +22,6 @@
                $auto = new Auto();
                $auto = $row;
                         ?>
-                        
   <div class="card card-main">
   <img class="card-img-top" src="<?php echo constant('URL').$auto->foto;?>" alt="Card image cap">
   <div class="card-body">
