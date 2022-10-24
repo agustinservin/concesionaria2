@@ -10,7 +10,7 @@
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="<?php echo constant('URL');?>public/images/banner.jpg" style="width:100%">
+    <img src="<?php echo constant('URL');?>public/images/banner2.png" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
@@ -32,3 +32,4 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+<script src="<?php echo constant('URL');?>public/scripts/slider.js"></script>

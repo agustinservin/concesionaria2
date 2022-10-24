@@ -10,8 +10,8 @@
 <body>
     <?php
     require 'views/header.php'; 
-    require 'views/slider.php';
     ?>
+    <?php require 'views/slider.php'; ?>
     <?php
      require 'views/buscador.php'; 
     ?>
