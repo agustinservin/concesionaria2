@@ -3,24 +3,15 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides">
-    <div class="numbertext">1 / 3</div>
     <img src="<?php echo constant('URL');?>public/images/banner2.png" style="width:100%">
-
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 3</div>
-<<<<<<< HEAD
-    <img src="<?php echo constant('URL');?>public/images/banner2.png" style="width:100%">
-    <div class="text">Caption Two</div>
-=======
     <img src="<?php echo constant('URL');?>public/images/banner.jpg" style="width:100%">
     
->>>>>>> 6f08498bd54eb5021e2f4649a18bcfea248de63a
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 3</div>
     <img src="<?php echo constant('URL');?>public/images/banner2.png" style="width:100%">
     
   </div>
@@ -37,10 +28,4 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-<<<<<<< HEAD
-<script src="<?php echo constant('URL');?>public/scripts/slider.js"></script>
-=======
-<script>
-  setTimeout(plusSlides(1),2000);
-</script>
->>>>>>> 6f08498bd54eb5021e2f4649a18bcfea248de63a
+

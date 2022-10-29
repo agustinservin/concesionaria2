@@ -10,15 +10,14 @@
 <body>
     <?php
     require 'views/header.php'; 
-<<<<<<< HEAD
-=======
-    
->>>>>>> 6f08498bd54eb5021e2f4649a18bcfea248de63a
     ?>
-    <?php require 'views/slider.php'; ?>
-    <?php
-     require 'views/slider.php'; 
-     ?>
+    <?php require 'views/slider.php'; ?><script>
+setInterval(next,2000);
+function next(){
+  plusSlides(1);
+}
+  
+</script>
     <?php
      require 'views/buscador.php'; 
     ?>
@@ -52,6 +51,6 @@
     require 'views/footer.php';
     ?>
     <script src="<?php echo constant('URL');?>public/scripts/slider.js"></script>
-
+    
 </body>
 </html>
