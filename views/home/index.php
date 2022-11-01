@@ -11,13 +11,7 @@
     <?php
     require 'views/header.php'; 
     ?>
-    <?php require 'views/slider.php'; ?><script>
-setInterval(next,2000);
-function next(){
-  plusSlides(1);
-}
-  
-</script>
+    <?php require 'views/slider.php'; ?>
     <?php
      require 'views/buscador.php'; 
     ?>
@@ -51,6 +45,13 @@ function next(){
     require 'views/footer.php';
     ?>
     <script src="<?php echo constant('URL');?>public/scripts/slider.js"></script>
-    
+    <script>
+      
+setInterval(next,3000);
+function next(){
+  plusSlides(1);
+}
+  
+</script>
 </body>
 </html>

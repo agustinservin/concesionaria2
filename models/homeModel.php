@@ -63,9 +63,14 @@ class homeModel extends Model{
     
 
     public function buscar($parametro){
+        $parametro = explode(' ',$parametro);
         $items2=[];
         try {
-            $query = $this->db->connect()->query("SELECT * FROM autos WHERE nombre LIKE '%".$parametro."%' or modelo LIKE '%".$parametro."%' or km LIKE '%".$parametro."%' ");
+            if(count($parametro)>=2){
+            $query = $this->db->connect()->query("SELECT * FROM autos WHERE nombre LIKE '%".$parametro[0]."%' and modelo LIKE '%".$parametro[1]."%' ");
+            }else{
+                $query = $this->db->connect()->query("SELECT * FROM autos WHERE nombre LIKE '%".$parametro[0]."%'");
+            }
             while($row = $query->fetch()){
                 $item = new Auto();
                 $item->patente = $row['patente'];

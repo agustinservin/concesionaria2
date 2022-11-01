@@ -1,6 +1,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="<?php echo constant('URL'); ?>public/scripts/buscador.js">
+<script src="<?php echo constant('URL'); ?>/public/scripts/buscador.js">
 </script>
 <div class="input-group">
   <div class="form-outline">
@@ -15,7 +15,7 @@
     type="search" 
     id="form1" 
     class="form-control" 
-    placeholder="Busco una marca especifica.. ej: Fiat">
+    placeholder="Busco un auto en particular ej: Renault 19">
   </div>
   <button onclick="buscar();" type="button" class="btn btn-primary"
     style="height: 3rem;
