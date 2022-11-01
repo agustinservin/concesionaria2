@@ -1,24 +1,23 @@
 <!-- Slideshow container -->
-<script src="<?php echo constant('URL');?>public/scripts/slider.js"></script>
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div class="mySlides">
     <div class="numbertext">1 / 3</div>
     <img src="<?php echo constant('URL');?>public/images/banner2.png" style="width:100%">
-    <div class="text">Caption Text</div>
+
   </div>
 
-  <div class="mySlides fade">
+  <div class="mySlides">
     <div class="numbertext">2 / 3</div>
     <img src="<?php echo constant('URL');?>public/images/banner.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    
   </div>
 
-  <div class="mySlides fade">
+  <div class="mySlides">
     <div class="numbertext">3 / 3</div>
     <img src="<?php echo constant('URL');?>public/images/banner2.png" style="width:100%">
-    <div class="text">Caption Three</div>
+    
   </div>
 
   <!-- Next and previous buttons -->
@@ -33,3 +32,6 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+<script>
+  setTimeout(plusSlides(1),2000);
+</script>
