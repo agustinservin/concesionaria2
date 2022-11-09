@@ -5,7 +5,7 @@
     $foto3 = constant('URL').$this->auto->foto3;
     var_dump($this->auto);
     ?>
-<script src="<?php echo constant('URL');?>public/scripts/galeria.js"></script>
+
 <div class="container-galeria">
    <div class="content-galeria">
 
@@ -44,3 +44,4 @@
 ?>
    <?php require 'views/footer.php';
     ?>
+    <script src="<?php echo constant('URL');?>public/scripts/galeria.js"></script>

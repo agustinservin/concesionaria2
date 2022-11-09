@@ -6,8 +6,9 @@ class Home extends Controller{
         parent::__construct();
     }
     public function render(){
+        $autos = $this->model->getCars();
+        $this->vista->autos = $autos;
         $this->vista->render('home/index');
     }
-   
 }
 ?>
