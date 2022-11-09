@@ -1,3 +1,3 @@
 <footer>
-    &copy; AGUSTIN 2022
+    BeraCoches &copy; 2022
 </footer>

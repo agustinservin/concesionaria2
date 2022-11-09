@@ -3,16 +3,26 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
+    text-decoration:none;
+    text-decoration-line: none;
+    text-underline-offset: none;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration:none;
+    text-decoration-line: none;
+    text-underline-offset: none;
     color:white;
 }
 a:hover{
     text-decoration: none;
+    text-decoration-line: none;
+    text-underline-offset: none;
 }
 #header{
     position: sticky;
@@ -41,6 +51,8 @@ a:hover{
 }
 .item-header{
     width: 10rem;
+    text-decoration: none;
+    text-decoration-line: none;
     justify-content: center;
     border-bottom:4px solid;
     border-color: rgba(0,0,0,0);
@@ -49,6 +61,8 @@ a:hover{
 }
 .link-header{
     height: 100%;
+    text-decoration: none;
+    text-decoration-line: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .item-header:hover{
@@ -81,7 +95,7 @@ footer{
     justify-content:space-around;
     width:80%;
     padding: 40px 60px; 
-    background:#ccc;
+    background:rgb(213, 213, 213);
 }
 #container-404{
     justify-content: center;
@@ -157,7 +171,7 @@ footer{
     font-weight: bold;
 }
 /*buscador */
-.input-group{
+#search{
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -294,6 +308,7 @@ nav ul li a img:active{
   
   .active, .dot:hover {
     background-color: black;
+    border:1px solid darkslategrey;
     transform: translateY(-3%);
     transform: scale(1.4);
   }

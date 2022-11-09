@@ -1,10 +1,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="<?php echo constant('URL'); ?>/public/scripts/buscador.js">
+<script src="<?php echo constant('URL'); ?>public/scripts/buscador.js">
 </script>
-<div class="input-group">
+<div id="search" class="input-group">
   <div class="form-outline">
-    <input 
+    <input id="form1" 
     onkeyup=
     "document.addEventListener('keyup', function(event){
       if (event.key === 'Enter') {
@@ -13,7 +13,7 @@
     });"
     style="border-radius:1.4rem; line-height:2.4;" 
     type="search" 
-    id="form1" 
+    
     class="form-control" 
     placeholder="Busco un auto en particular ej: Renault 19">
   </div>
@@ -22,5 +22,5 @@
     width: 3rem;
     border-radius: 2rem;">
     <i id="icono-search" class="fa-solid fa-magnifying-glass"></i>
-  </button></a>
+  </button>
 </div>
