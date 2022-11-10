@@ -14,17 +14,22 @@
     <div id="header">
     <i id="menu-icono" class="fa-solid fa-bars"></i>
         <!--<img class="logo" src="<?php echo constant('URL');?>public/images/logo.png"></ing>
---->
-<ul>
-        
+---><h2 class="logo">L O G O</h2>
+<ul class="menu-nav">
+
         <a style="text-decoration:none;" class="link-header" href="<?php echo constant('URL')?>"><li class="item-header">Home</li></a>
         
         <a style="text-decoration:none;" class="link-header" href="<?php echo constant('URL')?>vehiculos"><li class="item-header">Vehiculos</li></a>
 
         <a style="text-decoration:none;" class="link-header" href="<?php echo constant('URL')?>contacto"><li class="item-header">Contactanos</li></a>
-        </ul>
-        <h2 class="logo">L O G O</h2>
-    </div>
+        <div class="redes-menu">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-facebook-messenger"></i>
+        </div>
+</ul>
     
+    </div>
+
 </body>
 </html>

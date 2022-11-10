@@ -39,7 +39,6 @@ a:hover{
     height: 5rem;
     background: black;
     border-bottom:1px solid rgba(0,0,0,.1);
-    
 }
 #header ul li{
     display: inline-flex;
@@ -79,6 +78,7 @@ a:hover{
     height: 100%;
     align-items: center;
     justify-content: center;
+    justify-self: end;
 }
 #header .logo{
     font-family: 'Courier New', Courier, monospace;
@@ -180,6 +180,20 @@ footer{
     justify-content: center;
     padding: 10px;
     display: flex;
+}
+#form1{
+    border-radius: 1.4rem;
+    line-height: 1.2rem;
+    height: 3rem;
+}
+#search button{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.4rem;
 }
 .form-outline{
     width: 60%;
@@ -334,32 +348,98 @@ nav ul li a img:active{
     to {opacity: 1}
   }
 
-@media (max-width:768px){
-    *{
-        padding: 0;
-        margin: 0;
-    }
+@media (max-width:800px){
     #main{
         padding: 0;
     }
     #menu-icono{
-        display: flex;
+        display: inline-block;
         z-index: 10;
         font-size: 1.8rem;
         align-self: center;
         color: white;
     }
     #header .logo{
-        font-size: 15px;
+        position: absolute;
+        font-size: 30px;
         width: auto;
+        right: 10%;
         letter-spacing: 0px;
     }
     #header{
         height: 70px;
     }
-    #header ul,li{
+    .link-header{
+        height: 50px;
+        width: 100%;
+    }
+    #header ul{
+        position: fixed;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 50%;
+        max-width: 50%;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -110%;
+    }
+    #header ul li{
+        height: 100%;
+        width: 100%;
         display: block;
-        background-color: red;
+        align-content: center;
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .redes-menu{
+        color: rgb(44, 120, 219);
+        position: absolute;
+        bottom: 5%;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 1.8rem;
+    }
+    .item-header:hover{
+        color:crimson;
+        border:none;
+    }
+}
+@media(max-width:560px){
+    #search{
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+        display: flex;
+    }
+    #form1{
+        border-radius: 1.4rem;
+        line-height: 1.2rem;
+        height: 2rem;
+    }
+    .form-outline{
+        width: 90%;
+        margin: 0;
+        margin-top:3%;
+        margin-bottom: 3%;
+    }
+    .form-control{
+        height: 2.1rem;
+    }
+    #search button{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.7rem;
+        width: 1.7rem;
+        border-radius: 1rem;
+        margin-left: 2px;
     }
     
 }

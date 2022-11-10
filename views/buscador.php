@@ -11,16 +11,12 @@
         buscar();
       }
     });"
-    style="border-radius:1.4rem; line-height:2.4;" 
     type="search" 
     
     class="form-control" 
     placeholder="Busco un auto en particular ej: Renault 19">
   </div>
-  <button onclick="buscar();" type="button" class="btn btn-primary"
-    style="height: 3rem;
-    width: 3rem;
-    border-radius: 2rem;">
+  <button onclick="buscar();" type="button" class="btn btn-primary">
     <i id="icono-search" class="fa-solid fa-magnifying-glass"></i>
   </button>
 </div>
