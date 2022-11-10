@@ -17,7 +17,7 @@
                 <h2 class="titulo-info">Tenemos el auto que buscás</h2>
                 <p>Encontrá tu vehiculo ideal y escribinos al WhatsApp</p>    
             </div>
-            <div class="content-info"><i class="fa-solid fa-car"></i>
+            <div class="content-info"><i class="fa-light fa-clock">f017</i>
                 <h2 class="titulo-info">Tenemos el auto que buscás.No pierdas tiempo !</h2>
                 <p></p>    
             </div>

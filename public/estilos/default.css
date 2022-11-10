@@ -177,17 +177,21 @@ footer{
 }
 .container-info{
     display: flex;
+    padding: 20px;
     justify-content: space-between;
 }
 .content-info i{
-    font-size: 8rem;
-    color: rgb(43, 80, 102);
+    font-size: 2.8rem;
+    color: rgb(0, 135, 176);
 }
 .titulo-info{
     color:black;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
 }
 .content-info{
+    padding: 10px;
     display: block;
     text-align: center;
 }
@@ -372,6 +376,7 @@ nav ul li a img:active{
     }
     .card{
         margin: 10px;
+        width: 100%;
     }
     #menu-icono{
         display: inline-block;
@@ -429,6 +434,11 @@ nav ul li a img:active{
     .item-header:hover{
         color:crimson;
         border:none;
+    }
+}
+@media(max-width:320px){
+    #main{
+        width: 100%;
     }
 }
 @media(max-width:560px){
