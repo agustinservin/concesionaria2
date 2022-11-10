@@ -13,6 +13,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.redes-menu{
+    display: none;
+}
 a{
     text-decoration:none;
     text-decoration-line: none;
@@ -154,7 +157,6 @@ footer{
 .card-main:hover{
     cursor: pointer;
     transition: all 0.3s ease;
-    transform:translateY(-2%);
     box-shadow: 0 0 10px black;
 }
 .card img{
@@ -172,6 +174,22 @@ footer{
 .card-title{
     font-size:1.8rem;
     font-weight: bold;
+}
+.container-info{
+    display: flex;
+    justify-content: space-between;
+}
+.content-info i{
+    font-size: 8rem;
+    color: rgb(43, 80, 102);
+}
+.titulo-info{
+    color:black;
+    font-size: 1.5rem;
+}
+.content-info{
+    display: block;
+    text-align: center;
 }
 /*buscador */
 #search{
@@ -350,7 +368,10 @@ nav ul li a img:active{
 
 @media (max-width:800px){
     #main{
-        padding: 0;
+        padding: 15px;
+    }
+    .card{
+        margin: 10px;
     }
     #menu-icono{
         display: inline-block;
