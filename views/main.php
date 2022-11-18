@@ -6,7 +6,7 @@
                $auto = $row;
                         ?>
   <div class="card card-main">
-  <img class="card-img-top" src="<?php echo constant('URL').$auto->foto;?>" alt="Card image cap">
+  <img class="card-img-top" src="<?php echo $auto->foto;?>" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title"><?php echo $auto->nombre." ".$auto->modelo; ?></h5>
   </div>
